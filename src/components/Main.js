@@ -5,11 +5,16 @@ import ProfileView from './ProfileView';
 
 const Main = () => {
     return (
-        <div className="main">
-            <p>Main</p>
-            <NavigationBar />
-            <MenuContainer />
-            <ProfileView />
+        <div className="container">
+            <div className="row">
+                  <NavigationBar />
+            </div>
+          
+            <div className="row">
+                <MenuContainer />
+                <ProfileView />
+            </div>
+         
         </div>
     )
 }

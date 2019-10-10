@@ -1,9 +1,11 @@
 import React from 'react';
+import MenuElement from './MenuElement'
 
 const MenuContainer = () => {
     return (
-        <div>
-            <p>MenuContainer</p>
+        <div className="col-4 list-group">
+            <MenuElement />
+            <MenuElement />
         </div>
     )
 }
