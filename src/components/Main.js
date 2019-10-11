@@ -1,9 +1,10 @@
-import React from 'react';
+import React,{useState} from 'react';
 import NavigationBar from './NavigationBar';
 import MenuContainer from './MenuContainer';
 import ProfileView from './ProfileView';
-
+import StarwarsCharactersProvider from './StarwarsCharactersProvider';
 const Main = () => {
+// console.log(StarwarsCharactersProvider());
     return (
         <div className="container">
             <div className="row">
@@ -11,7 +12,7 @@ const Main = () => {
             </div>
           
             <div className="row">
-                <MenuContainer />
+                <MenuContainer characters = {StarwarsCharactersProvider()}/>
                 <ProfileView />
             </div>
          
